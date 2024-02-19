@@ -1,0 +1,122 @@
+name: '0auth Endpoints'
+description: |-
+
+  APIs for managing auth
+endpoints:
+  -
+    httpMethods:
+      - POST
+    uri: 0auth/register
+    metadata:
+      groupName: '0auth Endpoints'
+      groupDescription: |-
+
+        APIs for managing auth
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: ''
+        required: true
+        example: asperiores
+        type: string
+        enumValues: []
+        custom: []
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: true
+        example: pmitchell@example.org
+        type: string
+        enumValues: []
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: true
+        example: 'Gny-b@Nm"YnRq+'
+        type: string
+        enumValues: []
+        custom: []
+    cleanBodyParameters:
+      name: asperiores
+      email: pmitchell@example.org
+      password: 'Gny-b@Nm"YnRq+'
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer kdbEv1gc66VfDPZh5a8a4e3'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: 0auth/login
+    metadata:
+      groupName: '0auth Endpoints'
+      groupDescription: |-
+
+        APIs for managing auth
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: true
+        example: yesenia59@example.net
+        type: string
+        enumValues: []
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: true
+        example: "=i'EET!7zj<YDk9J;"
+        type: string
+        enumValues: []
+        custom: []
+    cleanBodyParameters:
+      email: yesenia59@example.net
+      password: "=i'EET!7zj<YDk9J;"
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer cdDEhg6fe48ZaVvk15b6Pa3'
+    controller: null
+    method: null
+    route: null
+    custom: []
