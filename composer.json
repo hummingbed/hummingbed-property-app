@@ -6,8 +6,6 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
-        "dufuna-tech/dufuna-db-migrations": "dev-master",
-        "dufuna-tech/dufuna-email-template": "dev-master",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
@@ -70,18 +68,7 @@
     "authors": [
         {
             "name": "michael menebraye",
-            "email": "michael@dufuna.org",
             "role": "Software Engineer"
-        }
-    ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@bitbucket.org:dufuna-tech/dufuna-db-migrations.git"
-        },
-        {
-            "type": "vcs",
-            "url": "git@bitbucket.org:dufuna-tech/dufuna-email-template.git"
         }
     ],
     "minimum-stability": "stable",
