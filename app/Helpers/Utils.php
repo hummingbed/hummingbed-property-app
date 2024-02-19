@@ -9,10 +9,6 @@ class Utils
     /**
      * @throws \Exception
      */
-    public static function generateConfirmationCode(): int
-    {
-        return random_int(1000000, 9999999);
-    }
 
     public static function getCurrentDatetime(): string
     {
