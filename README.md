@@ -45,6 +45,7 @@ composer install
 ##### serve app
 ```
 php artisan serve
+php artisan jwt:secret
 ```
 ##### generate api docs after creating new endpoint
 ```

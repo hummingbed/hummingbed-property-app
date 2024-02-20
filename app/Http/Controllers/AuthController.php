@@ -36,8 +36,17 @@ class AuthController extends BaseController
         $credentials = $request->only('email', 'password');
         $token = Auth::attempt($credentials);
         if (!$token) {
-            return $this->errorHttpMessage(null,422, ResponseMessages::UNPROCESSABLE_CONTENT);
+            return $this->errorHttpMessage(
+                null,
+                422, 
+                ResponseMessages::UNPROCESSABLE_CONTENT
+            );
         }
-        return $this->successHttpMessage('token', $token, ResponseMessages::AUTH_SUCCESS, 200);
+        return $this->successHttpMessage(
+            'token', 
+            $token, 
+            ResponseMessages::AUTH_SUCCESS, 
+            200
+        );
     }
 }
