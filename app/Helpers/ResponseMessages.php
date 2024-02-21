@@ -10,4 +10,9 @@ class ResponseMessages
     {
         return sprintf('%s %s successfully', $entity, $action);
     }
+
+    public static function notFoundErrorMessage($entity): string
+    {
+        return sprintf('%s Not Found', $entity);
+    }
 }

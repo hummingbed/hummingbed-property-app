@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Services\BrokerService;
 use App\Helpers\ResponseMessages;
 use Illuminate\Http\JsonResponse;
+use App\Http\Requests\StoreBrokerRequest;
 
 class BrokersController extends BaseController
 {
@@ -32,17 +33,29 @@ class BrokersController extends BaseController
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function addBroker(StoreBrokerRequest $request)
     {
-        //
+        $this->brokerService->saveBroker($request);
+        return $this->successHttpMessage(
+            'data',
+            true,
+            ResponseMessages::getSuccessMessage('Brokers', 'saved'),
+            201
+        );
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function getBrokerUsingBrokerId($id)
     {
-        //
+        $broker = $this->brokerService->getBrokerById($id);
+        return $this->successHttpMessage(
+            'data',
+            $broker,
+            ResponseMessages::getSuccessMessage('Brokers', 'retrieved'),
+            200
+        );
     }
 
     /**
